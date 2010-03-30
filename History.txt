@@ -1,4 +1,26 @@
-=== 0.0.1 2010-03-18
+=== 1.1.0 2010-03-30
+
+* Merged some of my other core extensions:
+  * Array#deep_dup
+  * Array#%
+  * Hash#deep_dup
+  * Object#dup?
+  * String#parenthesize
+  * String#depunctuate
+  * String#indent
+  * String#hex_to_bin
+  * DateTime#to_i / DateTime#to_f
+    * https://rails.lighthouseapp.com/projects/8994/tickets/3511-to_yaml-fails-for-datetime-objects
+  * Object#attr_boolean
+  * ActiveSupport::OrderedHash
+    * patched to support #to_yaml, unless patch is already applied
+  * Float#to_frac
+
+* 2 minor enhancements:
+  * Hash and array methods now call self.class.new instead of {} or [], so that their descendants work as expected.
+  * Hash#camelize_keys saw some improvement by removing redundant calls to #to_s
+
+=== 1.0.0 2010-03-18
 
 * 1 major enhancement:
   * Initial release

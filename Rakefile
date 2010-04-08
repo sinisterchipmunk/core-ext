@@ -4,6 +4,10 @@ require 'hoe'
 require 'fileutils'
 require './lib/sc-core-ext'
 
+def rcov_opts
+  IO.readlines("spec/rcov.opts").map {|l| l.chomp.split " "}.flatten
+end
+
 Hoe.plugin :newgem
 # Hoe.plugin :website
 # Hoe.plugin :cucumberfeatures
@@ -24,9 +28,19 @@ Rake::RDocTask.new(:docs) do |rdoc|
   rdoc.rdoc_files.add(files)
   rdoc.main = 'README.rdoc'
   rdoc.title = 'sc-core-ext'
-  #rdoc.template = '/path/to/gems/allison-2.0/lib/allison'
   rdoc.rdoc_dir = 'doc'
   rdoc.options << '--line-numbers' << '--inline-source'
+end
+
+namespace :spec do
+  desc "Run all specs with rcov"
+  Spec::Rake::SpecTask.new(:rcov) do |t|
+    t.spec_files = FileList['spec/**/*_spec.rb']
+    t.spec_opts = ['--options', 'spec/spec.opts']
+    t.rcov = true
+    t.rcov_dir = 'coverage'
+    t.rcov_opts = rcov_opts
+  end
 end
 
 require 'newgem/tasks'

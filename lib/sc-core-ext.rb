@@ -9,6 +9,7 @@ require 'sc-core-ext/array'
 require 'sc-core-ext/date_time'
 require 'sc-core-ext/active_support/ordered_hash'
 require 'sc-core-ext/float'
+require 'sc-core-ext/numeric'
 
 module ScCoreExt
   VERSION = '1.1.0'

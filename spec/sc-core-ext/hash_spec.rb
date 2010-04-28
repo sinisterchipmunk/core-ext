@@ -5,6 +5,20 @@ describe Hash do
     { :a => 1, :b => 2, :c => 3 }.without(:a, :b).should == {:c => 3}
   end
 
+  it "#stringify_values" do
+    { :a => 1, :b => 2 }.stringify_values.should == { :a => '1', :b => '2' }
+  end
+
+  context "#keys?" do
+    it "should be true" do
+      { :a => 1, :b => 2, :c => 3 }.keys?(:b, :c).should == true
+    end
+
+    it "should be false" do
+      { :a => 1, :b => 2, :c => 3 }.keys?(:a, :d).should == false
+    end
+  end
+
   it "#without_values" do
     { :a => 1, :b => 1, :c => 2, :d => 2}.without_values(1).should == {:c => 2, :d => 2}
   end

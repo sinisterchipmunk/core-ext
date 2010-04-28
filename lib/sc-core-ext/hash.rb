@@ -1,4 +1,22 @@
 class Hash
+  # As the ActiveSupport extension #stringify_keys! except that it's applied to values instead.
+  def stringify_values!
+    inject(self.class.new) do |new_hash, (key, value)|
+      new_hash[key] = value.kind_of?(String) ? value : value.to_s
+      new_hash
+    end
+  end
+
+  def stringify_values
+    dup.stringify_values!
+  end
+
+  # Returns true if #key? would return true for each item specified.
+  def keys?(*items)
+    items.flatten.each { |item| return false unless key?(item) }
+    true
+  end
+
   # Performs a "deep copy" of this hash; that is, returns a Hash that is a duplicate of this Hash, and whose
   # keys and values have each, in turn, had #deep_dup or #dup called on them. This should produce a Hash whose every
   # element is a copy of the original.

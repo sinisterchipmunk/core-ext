@@ -18,7 +18,6 @@ script/console
 script/destroy
 script/generate
 spec/rcov.opts
-spec/sc-core-ext/.hash_spec.rb.swp
 spec/sc-core-ext/active_support/ordered_hash_spec.rb
 spec/sc-core-ext/array_spec.rb
 spec/sc-core-ext/date_time_spec.rb

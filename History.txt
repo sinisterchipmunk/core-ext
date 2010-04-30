@@ -1,3 +1,9 @@
+=== 1.2.0 2010-04-30
+* Added some methods to Hash:
+  * #stringify_values!
+  * #stringify_values
+  * #keys?
+
 === 1.1.0 2010-03-30
 
 * Merged some of my other core extensions:

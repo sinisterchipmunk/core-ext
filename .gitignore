@@ -1,5 +1,24 @@
 .idea
-pkg
+coverage.data
+
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
 *~
+\#*
+.\#*
+
+## VIM
 *.swp
-docs
+
+## PROJECT::GENERAL
+coverage
+rdoc
+pkg
+
+## PROJECT::SPECIFIC

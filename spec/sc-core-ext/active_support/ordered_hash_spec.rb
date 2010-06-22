@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'active_support/version'
 
 describe ActiveSupport::OrderedHash do
   context "#to_yaml" do
@@ -10,7 +11,13 @@ describe ActiveSupport::OrderedHash do
     end
 
     it "converts to yaml" do
-      subject.to_yaml.should == "--- !map:ActiveSupport::OrderedHash \n:one: 1\n:two: 2\n"
+      if ActiveSupport::VERSION::MAJOR >= 3
+        yml = "--- !omap \n- :one: 1\n- :two: 2\n"
+      else
+        yml = "--- !map:ActiveSupport::OrderedHash \n:one: 1\n:two: 2\n"
+      end
+
+      subject.to_yaml.should == yml
     end
   end
 end

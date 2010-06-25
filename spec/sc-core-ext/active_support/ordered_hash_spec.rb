@@ -11,7 +11,7 @@ describe ActiveSupport::OrderedHash do
     end
 
     it "converts to yaml" do
-      if ActiveSupport::VERSION::MAJOR >= 3
+      if ActiveSupport::VERSION::MAJOR >= 3 || RUBY_VERSION > "1.8"
         yml = "--- !omap \n- :one: 1\n- :two: 2\n"
       else
         yml = "--- !map:ActiveSupport::OrderedHash \n:one: 1\n:two: 2\n"

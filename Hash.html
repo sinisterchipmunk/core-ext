@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Hash</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/sc-core-ext/hash_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/sc-core-ext/hash.rb">lib/sc-core-ext/hash.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-camelize_keys">#camelize_keys</a></li>
+					
+					<li><a href="#method-i-deep_dup">#deep_dup</a></li>
+					
+					<li><a href="#method-i-keys%3F">#keys?</a></li>
+					
+					<li><a href="#method-i-optionalize">#optionalize</a></li>
+					
+					<li><a href="#method-i-rename">#rename</a></li>
+					
+					<li><a href="#method-i-stringify_values">#stringify_values</a></li>
+					
+					<li><a href="#method-i-stringify_values%21">#stringify_values!</a></li>
+					
+					<li><a href="#method-i-without">#without</a></li>
+					
+					<li><a href="#method-i-without_nil_values">#without_nil_values</a></li>
+					
+					<li><a href="#method-i-without_values">#without_values</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./ActiveSupport.html">ActiveSupport</a></li>
+				
+					<li><a href="./ActiveSupport/OrderedHash.html">ActiveSupport::OrderedHash</a></li>
+				
+					<li><a href="./Array.html">Array</a></li>
+				
+					<li><a href="./DateTime.html">DateTime</a></li>
+				
+					<li><a href="./Float.html">Float</a></li>
+				
+					<li><a href="./Hash.html">Hash</a></li>
+				
+					<li><a href="./Numeric.html">Numeric</a></li>
+				
+					<li><a href="./Object.html">Object</a></li>
+				
+					<li><a href="./Regexp.html">Regexp</a></li>
+				
+					<li><a href="./ScCoreExt.html">ScCoreExt</a></li>
+				
+					<li><a href="./String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Hash</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="camelize-keys-method" class="method-detail ">
+				<a name="method-i-camelize_keys"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">camelize_keys</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="camelize-keys-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 58</span>
+58:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">camelize_keys</span>
+59:     <span class="ruby-identifier">stringified</span> = <span class="ruby-identifier">stringify_keys</span>
+60:     <span class="ruby-identifier">stringified</span>.<span class="ruby-identifier">rename</span>(<span class="ruby-identifier">stringified</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">renamed</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+61:       <span class="ruby-identifier">renamed</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">key</span>.<span class="ruby-identifier">camelize</span>
+62:       <span class="ruby-identifier">renamed</span>
+63:     <span class="ruby-keyword kw">end</span>)
+64:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="deep-dup-method" class="method-detail ">
+				<a name="method-i-deep_dup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">deep_dup</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Performs a &#8220;deep copy&#8221; of this hash; that is, returns a <a
+href="Hash.html">Hash</a> that is a duplicate of this <a
+href="Hash.html">Hash</a>, and whose keys and values have each, in turn,
+had <a href="Hash.html#method-i-deep_dup">deep_dup</a> or dup called on
+them. This should produce a <a href="Hash.html">Hash</a> whose every
+element is a copy of the original.
+</p>
+<p>
+This operation is expensive, and should be used sparingly.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="deep-dup-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 25</span>
+25:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">deep_dup</span>
+26:     <span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">new_hash</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+27:       <span class="ruby-identifier">key</span> = <span class="ruby-identifier">key</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:deep_dup</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">deep_dup</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">dup?</span>
+28:       <span class="ruby-identifier">value</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:deep_dup</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">deep_dup</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">dup?</span>
+29:       <span class="ruby-identifier">new_hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>
+30:       <span class="ruby-identifier">new_hash</span>
+31:     <span class="ruby-keyword kw">end</span>
+32:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="keys--method" class="method-detail ">
+				<a name="method-i-keys%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">keys?</span><span
+						class="method-args">(*items)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if key? would return true for each item specified.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="keys--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 15</span>
+15:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">keys?</span>(*<span class="ruby-identifier">items</span>)
+16:     <span class="ruby-identifier">items</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">key?</span>(<span class="ruby-identifier">item</span>) }
+17:     <span class="ruby-keyword kw">true</span>
+18:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="optionalize-method" class="method-detail ">
+				<a name="method-i-optionalize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">optionalize</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a hash that is a copy of this one, except that all nil values have
+been removed, making them essentially &#8220;optional&#8221; keys.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="optionalize-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 52</span>
+52:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">optionalize</span>
+53:     <span class="ruby-identifier">without_values</span>(<span class="ruby-keyword kw">nil</span>)
+54:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Hash.html#method-i-without_nil_values">without_nil_values</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+			<div id="rename-method" class="method-detail ">
+				<a name="method-i-rename"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rename</span><span
+						class="method-args">(to)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Takes a hash whose keys must match keys in this hash. Those keys will be
+renamed to match the corresponding value in the specified hash.
+</p>
+<p>
+Keys not found are ignored.
+</p>
+<p>
+Returns self.
+</p>
+<p>
+Example:
+</p>
+<pre>
+  { :a =&gt; 1 }.rename(:a =&gt; :b)
+    =&gt; {:b =&gt; 1}</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="rename-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 77</span>
+77:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rename</span>(<span class="ruby-identifier">to</span>)
+78:     <span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hash</span>, (<span class="ruby-identifier">old_key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+79:       <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">to</span>[<span class="ruby-identifier">old_key</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">old_key</span>] = <span class="ruby-identifier">value</span>
+80:       <span class="ruby-identifier">delete</span>(<span class="ruby-identifier">old_key</span>)
+81:       <span class="ruby-identifier">hash</span>
+82:     <span class="ruby-keyword kw">end</span>)
+83:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="stringify-values-method" class="method-detail ">
+				<a name="method-i-stringify_values"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">stringify_values</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="stringify-values-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 10</span>
+10:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">stringify_values</span>
+11:     <span class="ruby-identifier">dup</span>.<span class="ruby-identifier">stringify_values!</span>
+12:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="stringify-values--method" class="method-detail ">
+				<a name="method-i-stringify_values%21"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">stringify_values!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+As the <a href="ActiveSupport.html">ActiveSupport</a> extension
+stringify_keys! except that it&#8217;s applied to values instead.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="stringify-values--source">
+<pre>
+   <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 3</span>
+3:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">stringify_values!</span>
+4:     <span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">new_hash</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+5:       <span class="ruby-identifier">new_hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>
+6:       <span class="ruby-identifier">new_hash</span>
+7:     <span class="ruby-keyword kw">end</span>
+8:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="without-method" class="method-detail ">
+				<a name="method-i-without"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">without</span><span
+						class="method-args">(*keys)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="without-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 34</span>
+34:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">without</span>(*<span class="ruby-identifier">keys</span>)
+35:     <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">flatten!</span>
+36:     <span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hash</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+37:       <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">key</span>)
+38:       <span class="ruby-identifier">hash</span>
+39:     <span class="ruby-keyword kw">end</span>
+40:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="without-nil-values-method" class="method-detail method-alias">
+				<a name="method-i-without_nil_values"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">without_nil_values</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="Hash.html#method-i-optionalize">optionalize</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="without-values-method" class="method-detail ">
+				<a name="method-i-without_values"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">without_values</span><span
+						class="method-args">(*values)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="without-values-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sc-core-ext/hash.rb, line 42</span>
+42:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">without_values</span>(*<span class="ruby-identifier">values</span>)
+43:     <span class="ruby-identifier">values</span>.<span class="ruby-identifier">flatten!</span>
+44:     <span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">hash</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+45:       <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">value</span>)
+46:       <span class="ruby-identifier">hash</span>
+47:     <span class="ruby-keyword kw">end</span>
+48:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
